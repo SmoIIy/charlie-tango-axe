@@ -3,7 +3,7 @@ import "../../app/globals.css";
 export default async function Main() {
   return (
     <section className="w-40 flex-col">
-      <h1 className="text-5xl  text-orange-500">Diversa</h1>
+      <h1 className="text-5xl  text-test-orange">Diversa</h1>
       <p className="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis optio sit nihil quaerat aliquam recusandae ipsum quia sed maxime, blanditiis iusto incidunt sunt sapiente molestias repellendus placeat corrupti beatae a.</p>
       <form action="#">
         <label htmlFor="url">Cock and ball torture</label>
