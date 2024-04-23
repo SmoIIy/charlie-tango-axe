@@ -17,6 +17,7 @@
   --colors-grey-40: #999999;
   --colors-grey-60: #666666;
   --colors-grey-80: #333333;
+  --colors-grey-90: #181818;
   --colors-grey-100: #000000;
 }
 
@@ -30,7 +31,7 @@
 
 body {
   color: var(--colors-brand-beige-10);
-  background: var(--colors-grey-80);
+  background: var(--colors-grey-90);
 }
 
 @layer utilities {

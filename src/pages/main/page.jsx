@@ -2,12 +2,12 @@ import "../../app/globals.css";
 
 export default async function Main() {
   return (
-    <section class="p-16 rounded-3xl shadow-2xl ">
+    <section class="p-16 rounded-3xl shadow-2xl bg-c-grey80">
       <div class="flex flex-col items-center justify-center">
         <div class="max-h-auto mx-auto max-w-xl">
           <div class="mb-8 space-y-3">
             <h1 class="text-8xl font-semibold text-brand-orange70">Diversa</h1>
-            <p class="text-gray-500">Enter your website, and we will test the accesibility <br />No fuss, no ballade - <span className="text-brand-orange70 underline">read more!</span></p>
+            <h2 class="text-c-grey60">Enter your website, and we will test the accesibility <br />No fuss, no ballade - <span className="text-brand-orange70 underline">read more!</span></h2>
           </div>
 
           <form class="w-full">
