@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import Main from "@/pages/main/page";
+import Main from "@/app/main/page";
 import "../app/globals.css";
 
 export default function Home() {
