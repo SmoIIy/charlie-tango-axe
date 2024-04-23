@@ -1,7 +1,9 @@
-import drreport from "../../examples/dr_dk.json"
-
-export default async function Report({ report }){
-    console.table(report);
+"use client"
+import drreport from "./dr_dk.json"
+export default function Report({ report }){
+    
+    const data =  drreport;
+    console.log(data);
     return (
         <section>
             <h2>hi</h2>
