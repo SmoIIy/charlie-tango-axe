@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={poppins.className}>
         <nav className="m-auto flex justify-center gap-4 py-8">
-        <Link href="/">Hjem</Link>
+        <Link className="text-blue-500" href="/">Hjem</Link>
         <Link href="report">report</Link>
         </nav>
         {children}
