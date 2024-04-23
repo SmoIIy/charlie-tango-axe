@@ -2,12 +2,12 @@ import "../../app/globals.css";
 
 export default async function Main() {
   return (
-    <section class="border p-4">
+    <section class="p-16 rounded-3xl shadow-2xl ">
       <div class="flex flex-col items-center justify-center">
         <div class="max-h-auto mx-auto max-w-xl">
           <div class="mb-8 space-y-3">
             <h1 class="text-8xl font-semibold text-brand-orange70">Diversa</h1>
-            <p class="text-gray-500">Enter your email, and we'll send a code to your inbox. <br />No need for passwords -- like magic!</p>
+            <p class="text-gray-500">Enter your website, and we will test the accesibility <br />No fuss, no ballade - <span className="text-brand-orange70 underline">read more!</span></p>
           </div>
 
           <form class="w-full">
@@ -15,7 +15,7 @@ export default async function Main() {
               <div class="space-y-1">
                 <div class="space-y-2">
                   <label class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70" for="url">URL</label>
-                  <input class="border-input bg-background ring-offset-background placeholder:text-muted-foreground focus-visible:ring-ring flex h-10 w-full rounded-md border px-3 py-2 text-sm file:border-0 file:bg-transparent file:text-sm file:font-medium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50" id="url" placeholder="website.com..." name="url" />
+                  <input class="border-input text-c-grey80 bg-background ring-offset-background placeholder:text-muted-foreground focus-visible:ring-ring flex h-10 w-full rounded-md border px-3 py-2 text-sm file:border-0 file:bg-transparent file:text-sm file:font-medium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 shadow-xl" id="url" placeholder="website.com..." name="url" />
                 </div>
               </div>
   
