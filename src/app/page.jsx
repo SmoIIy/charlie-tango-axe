@@ -5,8 +5,8 @@ import "../app/globals.css";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center ">
-      <Main />
+    <main className="flex flex-col items-center justify-center ">
+        <Main />
 
     </main>
   );

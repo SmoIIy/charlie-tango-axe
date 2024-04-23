@@ -1,4 +1,5 @@
 import { Inter, Poppins, Libre_Baskerville } from "next/font/google";
+import Link from "next/link";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -15,7 +16,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={poppins.className}>{children}</body>
+      <body className={poppins.className}>
+        <nav className="m-auto flex justify-center gap-4 py-8">
+        <Link href="/">Hjem</Link>
+        <Link href="report">report</Link>
+        </nav>
+        {children}
+        </body>
     </html>
   );
 }
