@@ -6,7 +6,7 @@ export default function Report({ report }){
     console.log(data);
     return (
         <section>
-            <h2>hi</h2>
+            <h2>{data.url}</h2>
         </section>
     )
 
