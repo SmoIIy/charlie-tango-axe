@@ -11,8 +11,9 @@ export default async function Report({ searchParams }) {
   const data = await response.json();
 
   return (
-    <section>
-      <h2>{data.url}</h2>
-    </section>
+    <main>
+      <h1>Report for {data.url}</h1>
+      <p>Found {data.violations.length} issues</p>
+    </main>
   );
 }
