@@ -8,8 +8,19 @@ export default async function Main() {
         "use server";
         const url = formUrl.get("url");
         console.log(url);
-        redirect('/report/url=?' + url);
+        redirect('/report/?url=' + url);
     }
+
+
+
+
+
+
+
+
+    
+    
+    
     return (
         <section className="p-16 rounded-3xl shadow-2xl bg-c-grey80">
         <div className="flex flex-col items-center justify-center">
