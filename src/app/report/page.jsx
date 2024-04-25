@@ -1,5 +1,6 @@
 import drreport from "./dr_dk.json";
 export const revalidate = 1800;
+import Reporttitle from "@/components/Reporttitle";
 
 export default async function Report({ searchParams }) {
   //local test env
@@ -12,7 +13,7 @@ export default async function Report({ searchParams }) {
 
   return (
     <main>
-      <h1 className="text-2xl font-semibold text-brand-orange70">Report for <span className="uppercase">{data.url.replace("https://", "")}</span></h1>
+      <Reporttitle title={data.url}/>
       <div>
         <h2 className="text-xl text-brand-orange70">Violations:</h2>
         <p>Found {data.violations.length} issues</p>
