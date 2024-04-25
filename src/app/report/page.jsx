@@ -5,14 +5,14 @@ export default async function Report({ searchParams }) {
   //local test env
   //const data =  drreport;
   // console.log(data);
-  "use client";
+  "use server";
   const params = new URLSearchParams(searchParams);
   const response = await fetch(`https://mmd-a11y-api.vercel.app/api/scan?${params.toString()}`);
   const data = await response.json();
 
   return (
     <main>
-      <h1 className="text-2xl font-semibold text-brand-orange70">Report for {data.url}</h1>
+      <h1 className="text-2xl font-semibold text-brand-orange70">Report for <span className="uppercase">{data.url.replace("https://", "")}</span></h1>
       <div>
         <h2 className="text-xl text-brand-orange70">Violations:</h2>
         <p>Found {data.violations.length} issues</p>
