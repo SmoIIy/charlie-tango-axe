@@ -1,8 +1,6 @@
 import drreport from "./dr_dk.json";
 export const revalidate = 1800;
 import Reporttitle from "@/components/Reporttitle";
-import React from "react";
-import Collapsible from "react-collapsible";
 
 export default async function Report({ searchParams }) {
   //local test env
