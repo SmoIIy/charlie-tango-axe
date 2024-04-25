@@ -24,7 +24,9 @@ export default async function Report({ searchParams }) {
               <p>Impact: {violation.impact}</p>
               <p>Description: {violation.description}</p>
               <p>Help: {violation.help}</p>
-              <a href={violation.helpUrl}>More info</a>
+              <a target="blank_" href={violation.helpUrl}>
+                More info
+              </a>
             </li>
           ))}
         </ul>
@@ -40,7 +42,9 @@ export default async function Report({ searchParams }) {
               <p>Impact: {pass.impact}</p>
               <p>Description: {pass.description}</p>
               <p>Help: {pass.help}</p>
-              <a href={pass.helpUrl}>More info</a>
+              <a target="blank_" href={pass.helpUrl}>
+                More info
+              </a>
             </li>
           ))}
         </ul>
@@ -56,7 +60,9 @@ export default async function Report({ searchParams }) {
               <p>Impact: {issue.impact}</p>
               <p>Description: {issue.description}</p>
               <p>Help: {issue.help}</p>
-              <a href={issue.helpUrl}>More info</a>
+              <a target="blank_" href={issue.helpUrl}>
+                More info
+              </a>
             </li>
           ))}
         </ul>
