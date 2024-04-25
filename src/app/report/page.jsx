@@ -12,7 +12,9 @@ export default async function Report({ searchParams }) {
 
   return (
     <main>
-      <h1 className="text-2xl font-semibold text-brand-orange70">Report for <span className="uppercase">{data.url.replace("https://", "")}</span></h1>
+      <h1 className="text-2xl font-semibold text-brand-orange70">
+        Report for <span className="uppercase">{data.url.replace("https://", "")}</span>
+      </h1>
       <div>
         <h2 className="text-xl text-brand-orange70">Violations:</h2>
         <p>Found {data.violations.length} issues</p>
@@ -49,13 +51,13 @@ export default async function Report({ searchParams }) {
         <h2 className="text-xl text-brand-orange70">Inapplicable:</h2>
         <p>Found {data.inapplicable.length} inapplicable</p>
         <ul>
-          {data.inapplicable.map((pass, index) => (
+          {data.inapplicable.map((issue, index) => (
             <li key={index}>
-              {/* <h3 className="text-brand-orange70">{.id}</h3>
-              <p>Impact: {.impact}</p>
-              <p>Description: {.description}</p>
-              <p>Help: {.help}</p>
-              <a href={.helpUrl}>More info</a> */}
+              <h3 className="text-brand-orange70">{issue.id}</h3>
+              <p>Impact: {issue.impact}</p>
+              <p>Description: {issue.description}</p>
+              <p>Help: {issue.help}</p>
+              <a href={issue.helpUrl}>More info</a>
             </li>
           ))}
         </ul>
