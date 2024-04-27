@@ -8,7 +8,7 @@ export default async function Report({ searchParams }) {
   //local test env
   //const data =  drreport;
   // console.log(data);
-  "use client";
+  "use server";
   const params = new URLSearchParams(searchParams);
   const response = await fetch(`https://mmd-a11y-api.vercel.app/api/scan?${params.toString()}`);
   const data = await response.json();
