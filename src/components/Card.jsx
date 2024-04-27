@@ -22,10 +22,11 @@ const items = [
     children: <p>{text}</p>,
   },
 ];
-const App = () => {
+const Card = () => {
+    "use client"
   const onChange = (key) => {
     console.log(key);
   };
-  return <Collapse items={items} defaultActiveKey={["1"]} onChange={onChange} />;
+  return <Collapse items={items} defaultActiveKey={["1"]}  />;
 };
-export default App;
+export default Card;
