@@ -2,6 +2,7 @@ import Reportscore from "@/components/Reportscore";
 import drreport from "./dr_dk.json";
 export const revalidate = 1800;
 import Reporttitle from "@/components/Reporttitle";
+import Reportimage from "@/components/Reportimage";
 
 export default async function Report({ searchParams }) {
   //local test env
@@ -13,9 +14,13 @@ export default async function Report({ searchParams }) {
   const data = await response.json();
 
   return (
-    <main>
-      <Reporttitle title={data.url}/>
-      <Reportscore violations={data.violations}/>
+    <main className="max-w-7xl m-auto border">
+
+      <section className="flex justify-center">
+          <Reporttitle title={data.url}/>
+          <Reportscore violations={data.violations}/>
+          <Reportimage src={data}/>
+      </section>
       <div>
         <h2 className="text-xl text-brand-orange70">Violations:</h2>
         <p>Found {data.violations.length} issues</p>
