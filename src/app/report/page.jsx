@@ -1,3 +1,4 @@
+import Reportscore from "@/components/Reportscore";
 import drreport from "./dr_dk.json";
 export const revalidate = 1800;
 import Reporttitle from "@/components/Reporttitle";
@@ -14,6 +15,7 @@ export default async function Report({ searchParams }) {
   return (
     <main>
       <Reporttitle title={data.url}/>
+      <Reportscore violations={data.violations}/>
       <div>
         <h2 className="text-xl text-brand-orange70">Violations:</h2>
         <p>Found {data.violations.length} issues</p>
