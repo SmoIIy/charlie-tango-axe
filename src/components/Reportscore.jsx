@@ -9,9 +9,9 @@ export default async function Reportscore({violations}){
 
     if (violations.length >= 3 ) {
         source = cross;
-    } else if(violations.length = 2) {
+    } else if(violations.length == 2) {
         source = halfcheck;
-    } else if(violations.length = 0 || 1) {
+    } else if(violations.length == 0 || 1) {
         source = check;
     }
     console.log(violations.length);
