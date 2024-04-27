@@ -17,7 +17,7 @@ export default async function Reportscore({violations}){
     console.log(violations.length);
     return ( 
         //TODO update alt on check
-        <article className="bg-c-grey60 m-4 px-8 min-h-28 line-clamp-2 w-96 rounded-xl flex justify-center">
+        <article className="bg-c-grey80 m-4 px-8 min-h-28 line-clamp-2 w-96 rounded-xl flex justify-center">
             <Image priority
             src={source}
             alt="checkmark" /> 
