@@ -14,7 +14,7 @@ export default function Card2({ children }) {
   };
 
   return (
-    <Collapse bordered={false} defaultActiveKey={["1"]} expandIcon={({ isActive }) => <CaretRightOutlined rotate={isActive ? 90 : 0} />} style={{ background: "black" }}>
+    <Collapse bordered={false} defaultActiveKey={["0"]} expandIcon={({ isActive }) => <CaretRightOutlined rotate={isActive ? 90 : 0} />} style={{ background: "black" }}>
       <Collapse.Panel key="1" header="Lorem Ipsum" style={panelStyle}>
         {children}
       </Collapse.Panel>
