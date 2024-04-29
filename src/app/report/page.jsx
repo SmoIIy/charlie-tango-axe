@@ -16,8 +16,8 @@ export default async function Report({ searchParams }) {
   const data = await response.json();
 
   return (
-    <main className="max-w-7xl m-auto border">
-      <section className="flex justify-center">
+    <main className="max-w-7xl m-auto">
+      <section className="flex justify-center items-center flex-col sm:flex-row sm:items-start">
         <Reporttitle title={data.url} />
         <Reportscore violations={data.violations} />
         <Reportimage src={data} />
