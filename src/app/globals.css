@@ -42,3 +42,6 @@ body {
 .ant-collapse-header-text {
   color: var(--colors-brand-orange-70);
 }
+.ant-collapse-header svg {
+  fill: var(--colors-brand-orange-70);
+}
