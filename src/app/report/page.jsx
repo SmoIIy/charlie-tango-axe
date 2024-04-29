@@ -18,7 +18,7 @@ export default async function Report({ searchParams }) {
       <Reporttitle title={data.url} />
 
       <Card2>
-        <div className="violations">
+        <div className="text-c-grey20">
           <h2 className="text-xl text-brand-orange70">Violations:</h2>
           <p>Found {data.violations.length} issues</p>
           <ul>
@@ -38,7 +38,7 @@ export default async function Report({ searchParams }) {
       </Card2>
 
       <Card2>
-        <div>
+        <div className="text-c-grey20">
           <h2 className="text-xl text-brand-orange70">Passes:</h2>
           <p>Found {data.passes.length} passes</p>
           <ul>
@@ -57,7 +57,7 @@ export default async function Report({ searchParams }) {
         </div>
       </Card2>
       <Card2>
-        <div>
+        <div className="text-c-grey20">
           <h2 className="text-xl text-brand-orange70">Inapplicable:</h2>
           <p>Found {data.inapplicable.length} inapplicable</p>
           <ul>
