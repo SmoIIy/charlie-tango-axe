@@ -23,7 +23,7 @@ export default async function Report({ searchParams }) {
         <Reportimage src={data} />
       </section>
 
-      <Card2>
+      <Card2 title="Violations">
         <div className="text-c-grey20">
           <h2 className="text-xl text-brand-orange70">Violations:</h2>
           <p>Found {data.violations.length} issues</p>
@@ -43,7 +43,7 @@ export default async function Report({ searchParams }) {
         </div>
       </Card2>
 
-      <Card2>
+      <Card2 title="Passes">
         <div className="text-c-grey20">
           <h2 className="text-xl text-brand-orange70">Passes:</h2>
           <p>Found {data.passes.length} passes</p>
@@ -62,7 +62,7 @@ export default async function Report({ searchParams }) {
           </ul>
         </div>
       </Card2>
-      <Card2>
+      <Card2 title="Inapplicable">
         <div className="text-c-grey20">
           <h2 className="text-xl text-brand-orange70">Inapplicable:</h2>
           <p>Found {data.inapplicable.length} inapplicable</p>
