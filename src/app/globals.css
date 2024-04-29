@@ -39,3 +39,6 @@ body {
     text-wrap: balance;
   }
 }
+.ant-collapse-header-text {
+  color: var(--colors-brand-orange-70);
+}
