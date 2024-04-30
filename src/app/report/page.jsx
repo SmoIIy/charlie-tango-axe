@@ -17,12 +17,19 @@ export default async function Report({ searchParams }) {
     const params = new URLSearchParams(searchParams);
     const response = await fetch(`https://mmd-a11y-api.vercel.app/api/scan?${params.toString()}`);
     const data = await response.json();
-    
+    console.log(data);
     if (data.url[0] == 'Invalid URL') {
         return (
             <Retry />
         );  
     }  
+
+    if ('error' in data) {
+        return (
+            <Retry />
+        )
+        
+    }
     return (
         <>
         <div className="w-full text-center">
