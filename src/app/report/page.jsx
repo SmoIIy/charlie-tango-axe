@@ -25,17 +25,17 @@ export default async function Report({ searchParams }) {
 
       <Card2 title="Violations">
         <div className="text-c-grey20">
-          <h2 className="text-xl text-brand-orange70">Violations:</h2>
+          <h2 className="text-xl font-bold text-brand-orange70">Violations:</h2>
           <p>Found {data.violations.length} issues</p>
           <ul>
             {data.violations.map((violation, index) => (
-              <li key={index}>
-                <h3 className="text-brand-orange70">{violation.id}</h3>
-                <p>Impact: {violation.impact}</p>
-                <p>Description: {violation.description}</p>
-                <p>Help: {violation.help}</p>
-                <a target="blank_" href={violation.helpUrl}>
-                  More info
+              <li className="max-w-prose" key={index}>
+                <h3 className="mb-1 mt-4 text-brand-orange70 font-bold capitalize">{violation.id}</h3>
+                <p className="my-1"><span className="font-bold">Impact:</span> {violation.impact}</p>
+                <p className="my-1"><span className="font-bold">Description:</span> {violation.description}</p>
+                <p className="my-1"><span className="font-bold">Help:</span> {violation.help}</p>
+                <a className="my-1 underline underline-offset-4 decoration-brand-orange70 hover:text-brand-orange70" target="blank_" href={violation.helpUrl}>
+                  More info <span className="text-brand-orange70">⮞</span>
                 </a>
               </li>
             ))}
@@ -45,17 +45,17 @@ export default async function Report({ searchParams }) {
 
       <Card2 title="Passes">
         <div className="text-c-grey20">
-          <h2 className="text-xl text-brand-orange70">Passes:</h2>
+          <h2 className="text-xl font-bold text-brand-orange70">Passes:</h2>
           <p>Found {data.passes.length} passes</p>
           <ul>
             {data.passes.map((pass, index) => (
-              <li key={index}>
-                <h3 className="text-brand-orange70">{pass.id}</h3>
-                <p>Impact: {pass.impact}</p>
-                <p>Description: {pass.description}</p>
-                <p>Help: {pass.help}</p>
-                <a target="blank_" href={pass.helpUrl}>
-                  More info
+              <li className="max-w-prose" key={index}>
+                <h3 className="mb-1 mt-4 text-brand-orange70 font-bold capitalize">{pass.id}</h3>
+                <p className="my-1"><span className="font-bold">Impact:</span> {pass.impact}</p>
+                <p className="my-1"><span className="font-bold">Description:</span> {pass.description}</p>
+                <p className="my-1"><span className="font-bold">Help:</span> {pass.help}</p>
+                <a className="my-1 underline underline-offset-4 decoration-brand-orange70 hover:text-brand-orange70" target="blank_" href={pass.helpUrl}>
+                  More info <span className="text-brand-orange70">⮞</span>
                 </a>
               </li>
             ))}
@@ -64,17 +64,17 @@ export default async function Report({ searchParams }) {
       </Card2>
       <Card2 title="Inapplicable">
         <div className="text-c-grey20">
-          <h2 className="text-xl text-brand-orange70">Inapplicable:</h2>
+          <h2 className="text-xl font-bold text-brand-orange70">Inapplicable:</h2>
           <p>Found {data.inapplicable.length} inapplicable</p>
           <ul>
             {data.inapplicable.map((issue, index) => (
-              <li key={index}>
-                <h3 className="text-brand-orange70">{issue.id}</h3>
-                <p>Impact: {issue.impact}</p>
-                <p>Description: {issue.description}</p>
-                <p>Help: {issue.help}</p>
-                <a target="blank_" href={issue.helpUrl}>
-                  More info
+              <li className="max-w-prose" key={index}>
+                <h3 className="mb-1 mt-4 text-brand-orange70 font-bold capitalize">{issue.id}</h3>
+                <p className="my-1"><span className="font-bold">Impact:</span> {issue.impact}</p>
+                <p className="my-1"><span className="font-bold">Description:</span> {issue.description}</p>
+                <p className="my-1"><span className="font-bold">Help:</span> {issue.help}</p>
+                <a className="my-1 underline underline-offset-4 decoration-brand-orange70 hover:text-brand-orange70" target="blank_" href={issue.helpUrl}>
+                  More info <span className="text-brand-orange70">⮞</span>
                 </a>
               </li>
             ))}
