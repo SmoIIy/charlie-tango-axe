@@ -82,7 +82,7 @@ const App = () => (
     dataSource={data}
     renderItem={(item) => (
       <List.Item>
-        <a href="">
+        <a href="x" target="blank_">
           <Card title={item.title} content={item.content}>
             {item.content}
           </Card>
