@@ -68,6 +68,10 @@ const data = [
     content: "Screen readers have no way of translating images into words. It is important that all images, including image maps, have alt text values. Screen readers typically announce the filename of the image if alternative text is missing. Filenames do not adequately describe images and are not helpful to screen reader users.",
   },
 ];
+const panelStyle = {
+  //     ved ikke helt hvordan det fungere endnu, men tror det er vigtigt
+};
+
 const App = () => (
   <List
     grid={{
@@ -82,7 +86,7 @@ const App = () => (
     }}
     dataSource={data}
     renderItem={(item) => (
-      <List.Item>
+      <List.Item style={panelStyle}>
         <a href="x" target="blank_">
           <Card title={item.title} content={item.content}>
             {item.content}
