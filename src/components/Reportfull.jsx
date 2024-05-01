@@ -2,6 +2,7 @@ import Reportimage from "./Reportimage"
 import Reportscore from "./Reportscore"
 import Reporttitle from "./Reporttitle"
 import Card2 from "./Card2"
+import Textbox from "./Textbox";
 
 
 
@@ -14,7 +15,7 @@ export default async function Reportfull(data){
                 <Reportscore violations={data.data.violations} />
                 <Reportimage src={data.data} />
             </section>
-  
+        <Textbox />
         <Card2 title="Violations">
           <div className="text-c-grey20">
             <h2 className="text-xl font-bold text-brand-orange70">Violations:</h2>
