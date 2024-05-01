@@ -1,10 +1,47 @@
+"use client";
+
 import "../../app/globals.css";
 import { redirect } from "next/navigation";
+import React from "react";
+import { Card, List } from "antd";
 
-export default async function Rules() {
-  return (
-    <div>
-      <h1>Hello World..</h1>
-    </div>
-  );
-}
+const data = [
+  {
+    title: "Title 1",
+  },
+  {
+    title: "Title 2",
+  },
+  {
+    title: "Title 3",
+  },
+  {
+    title: "Title 4",
+  },
+  {
+    title: "Title 5",
+  },
+  {
+    title: "Title 6",
+  },
+];
+const App = () => (
+  <List
+    grid={{
+      gutter: 16,
+      xs: 1,
+      sm: 2,
+      md: 4,
+      lg: 4,
+      xl: 6,
+      xxl: 3,
+    }}
+    dataSource={data}
+    renderItem={(item) => (
+      <List.Item>
+        <Card title={item.title}>Card content</Card>
+      </List.Item>
+    )}
+  />
+);
+export default App;
