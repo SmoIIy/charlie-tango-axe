@@ -34,13 +34,7 @@ export default async function Main() {
             </div>
           </form>
 
-          <div className="text-center">
-            {" "}
-            No placeholder?{" "}
-            <a className="text-brand-turquoise50" href="/signup">
-              Create placeholder
-            </a>{" "}
-          </div>
+
         </div>
       </div>
     </section>
