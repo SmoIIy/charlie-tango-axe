@@ -45,3 +45,6 @@ body {
 .ant-collapse-header svg {
   fill: var(--colors-brand-orange-70);
 }
+.ant-spin-container {
+  margin: 24px;
+}

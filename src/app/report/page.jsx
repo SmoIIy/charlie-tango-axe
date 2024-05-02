@@ -1,10 +1,6 @@
 import Reportscore from "@/components/Reportscore";
 import drreport from "./dr_dk.json";
 export const revalidate = 1800;
-import Reporttitle from "@/components/Reporttitle";
-import Card from "@/components/Card";
-import Card2 from "@/components/Card2";
-import Reportimage from "@/components/Reportimage";
 import Reportfull from "@/components/Reportfull";
 import Retry from "@/components/Retry";
 import Link from "next/link";
