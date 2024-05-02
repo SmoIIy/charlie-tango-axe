@@ -1,11 +1,26 @@
-// det var en fallout reference
+import Link from "next/link";
 import Rules from "./rules.json";
-const data = Rules;
 
-export default async function Rulepage(){
+const RuleCard = ({ title, content }) => (
+  <Link href={`/rules/${encodeURIComponent(title)}`}>
+    <div className="cursor-pointer bg-c-grey80 rounded-md shadow-md p-6 mb-4">
+      <h2 className="text-lg text-brand-orange70 font-semibold mb-2">{title}</h2>
+      <p>{content}</p>
+    </div>
+  </Link>
+);
 
-    console.log(data);
-    return (
-        <h1>h1</h1>
-    )
-}
+const Rulepage = () => {
+  return (
+    <div className="m-4">
+      <h1 className="text-4xl font-bold mb-4 text-brand-orange70">Rules</h1>
+      <div>
+        {Rules.map((rule, index) => (
+          <RuleCard key={index} title={rule.title} content={rule.content} />
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default Rulepage;
