@@ -3,11 +3,11 @@ import "../../app/globals.css";
 
 export default async function Main() {
   return (
-    <section className="p-16 rounded-3xl shadow-2xl bg-c-grey80">
+    <section className="p-8 sm:p-16 rounded sm:rounded-3xl shadow-2xl bg-c-grey80">
       <div className="flex flex-col items-center justify-center">
         <div className="max-h-auto mx-auto max-w-xl">
           <div className="mb-8 space-y-3">
-            <h1 className="text-8xl font-semibold text-brand-orange70">Diversa</h1>
+            <h1 className="text-5xl  sm:text-8xl font-semibold text-brand-orange70">Diversa</h1>
             <h2 className="text-c-grey60">
               Enter your website, and we will test the accesibility <br />
               No fuss, no ballade -{" "}
