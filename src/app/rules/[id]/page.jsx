@@ -1,12 +1,16 @@
 import React from "react";
 import Rules from "../../rules/rules.json";
+import Link from "next/link";
 
 const Page = () => {
-  // Assuming you're fetching a rule with id '1' as an example
+
   const rule = Rules.find((rule) => rule.id === "1");
 
   return (
     <div className="p-8">
+        <div className="w-full text-center m-4">
+            <Link className="text-8xl font-semibold text-brand-orange70"  href="/">DIVERSA</Link>
+        </div>
       {rule && (
         <div className="max-w-lg mx-auto bg-c-grey80 shadow-md rounded-lg overflow-hidden">
           <div className="p-6">

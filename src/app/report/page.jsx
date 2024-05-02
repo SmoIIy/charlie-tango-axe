@@ -30,7 +30,7 @@ export default async function Report({ searchParams }) {
         <>
         <div className="w-full text-center">
             <Link className="text-8xl text-center font-semibold text-brand-orange70 w-full"  href="/">DIVERSA</Link>
-            </div>
+        </div>
             <Reportfull data={data} />
         </>
     
