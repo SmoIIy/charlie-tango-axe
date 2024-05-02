@@ -3,7 +3,7 @@
 import "../../app/globals.css";
 import { redirect } from "next/navigation";
 import React from "react";
-import { Card, List, ConfigProvider } from "antd";
+import { Card, List } from "antd";
 
 const data = [
   {
