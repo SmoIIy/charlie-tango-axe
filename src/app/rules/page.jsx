@@ -27,3 +27,4 @@ const Rulepage = () => {
 };
 
 export default Rulepage;
+//:D
