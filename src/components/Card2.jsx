@@ -1,4 +1,3 @@
-// Card2.js
 "use client";
 
 import React from "react";
