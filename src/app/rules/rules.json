@@ -1,5 +1,5 @@
 {
-{
+  {
     "title": "<audio> elements must have a captions <track>",
     "content": "Without a caption for an audio file, deaf users are not able to know the meaningful information that the audio conveys such as identifying who is speaking, its dialogue, and non-speech information conveyed through sound such as musical cues or sound effects. Captions provide the part of the 'content' that is available via the audio track.",
   },
