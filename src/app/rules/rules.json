@@ -2,7 +2,11 @@
   {
     "id": "1",
     "title": "<audio> elements must have a captions <track>",
-    "content": "Without a caption for an audio file, deaf users are not able to know the meaningful information that the audio conveys such as identifying who is speaking, its dialogue, and non-speech information conveyed through sound such as musical cues or sound effects. Captions provide the part of the 'content' that is available via the audio track."
+    "content": "Without a caption for an audio file, deaf users are not able to know the meaningful information that the audio conveys such as identifying who is speaking, its dialogue, and non-speech information conveyed through sound such as musical cues or sound effects. Captions provide the part of the 'content' that is available via the audio track.",
+    "howToFix": "Ensure the kind attribute of the track element contains the value 'captions'. Ensure the caption text content conveys all meaningful information in the audio element such as who is speaking, a transcript of the dialogue, musical cues, and sound effects.",
+    "note": "Captions and subtitles are not the same thing. Captions are necessary for deaf viewers to understand the content. Captions include a text description of all important background noises and other sounds, in addition to the text of all dialog and narration. Subtitles are generally language translations, to help listeners understand content presented in a language they don't understand. A Spanish audio file could contain English subtitles, for example. Subtitles generally include only dialog and narration.",
+    "description": "The track element must be present for each HTML5 audio element, with kind='captions' set as a property. Captions are text—synchronized with the audio file—of the dialog, narration, and any important auditory information, for the benefit of deaf users.",
+    "impact": "Critical"
   },
   {
     "id": "2",

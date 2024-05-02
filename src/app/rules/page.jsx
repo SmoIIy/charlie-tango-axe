@@ -12,17 +12,14 @@ const RuleCard = ({ id, title, content }) => (
 
 const Rulepage = () => {
   return (
-   <>
-        <h1 className="text-4xl font-bold mb-8 text-brand-orange70 text-center">Rules</h1>
-        <section className="m-4 mx-auto max-w-6xl flex justify-center flex-wrap gap-4 items-stretch ">
-          
-    
-            {Rules.map((rule, index) => (
-              <RuleCard key={index} id={rule.id} title={rule.title} content={rule.content} />
-            ))}
-    
-        </section>
-   </>
+    <>
+      <h1 className="text-4xl font-bold mb-8 text-brand-orange70 text-center">Rules</h1>
+      <section className="m-4 mx-auto max-w-6xl flex justify-center flex-wrap gap-4 items-stretch ">
+        {Rules.map((rule, index) => (
+          <RuleCard key={index} id={rule.id} title={rule.title} content={rule.content} />
+        ))}
+      </section>
+    </>
   );
 };
 

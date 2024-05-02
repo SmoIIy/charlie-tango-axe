@@ -1,7 +1,5 @@
-export default async function Page(){
-    return (
-        <h1>Placeholder
+import Rules from "../../rules/rules.json";
 
-        </h1>
-    )
+export default async function Page() {
+  return <h1>Placeholder</h1>;
 }
